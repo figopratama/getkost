@@ -11,7 +11,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-                    <ul class="nav navbar-nav navbar-left" id="loginregister">
+                    <ul class="nav navbar-nav navbar-left" id="login-register">
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Login</a>
                         </li>
