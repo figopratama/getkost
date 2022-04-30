@@ -11,18 +11,21 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-                    <ul class="nav navbar-nav navbar-left" id="login-register">
+
+					{{-- GARIS PEMBATAS ANTARA LOGO SAMA LOGIN-REGISTER --}}
+                    
+					{{-- <ul class="nav navbar-nav navbar-left" id="login-register">
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Register</a>
                         </li>
-                    </ul>
+                    </ul> --}}
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav ml-auto">
+						<ul class="nav navbar-nav menu_nav navbar-left">
 							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
