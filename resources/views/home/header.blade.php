@@ -1,4 +1,4 @@
-	<!-- Start Header Area -->
+<!-- Start Header Area -->
 	<header class="header_area sticky-header">
 		<div class="main_menu">
 			<nav class="navbar navbar-expand-lg navbar-light main_box">
@@ -34,23 +34,38 @@
 									Tentang Kami
 								</a>
 							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"aria-expanded="false">
-									Akun
-								</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-									<li class="nav-item"><a class="nav-link" href="tracking.html">Register</a></li>
-								</ul>
-							</li>
+						</ul>
+						<ul class="nav navbar-nav menu_nav">
+							@if (Route::has('login'))
+								@auth
+								<li class="nav-item">
+									<x-app-layout>
+									
+									</x-app-layout>
+								</li>
+								@else
+								<li class="nav-item submenu dropdown" style="margin-left: 45px; margin-right:10px">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"aria-expanded="false">
+										Akun
+									</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ url('register') }}">Register</a></li>
+									</ul>
+								</li>
+								@endauth
+							@endif
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li class="nav-item"><a href="cart.html" class="cart"><span class="ti-bag"></span></a></li>
 							<li class="nav-item">
-								<button class="search"><span class="lnr lnr-magnifier" id="search"></span></button>
+								<a href="cart.html" class="cart"><span class="ti-bag"></span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<button class="search"><span class="lnr lnr-magnifier" id="search"></span>
+								</button>
 							</li>
 						</ul>
-                        {{-- Garis Pembatas --}}
 					</div>
 				</div>
 			</nav>

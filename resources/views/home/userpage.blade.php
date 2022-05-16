@@ -15,7 +15,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Karma Shop</title>
+	<title>GetKost - Rumah kost terjangkau</title>
 	<!--
 		CSS
 		============================================= -->
@@ -35,7 +35,30 @@
 <body>
     @include('home.header')
 
-    @include('home.slider')
+	<section class="banner-area">
+		<div class="container">
+			<div class="row fullscreen align-items-center justify-content-start">
+				<div class="col-lg-12">
+					<div class="active-banner-slider owl-carousel">
+						<div class="row single-slide align-items-center d-flex">
+							<div class="col-lg-5 col-md-6">
+								<div class="banner-content">
+									<h1>Getkost<br>Rumah kost Surabaya!</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+										dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+								</div>
+							</div>
+							<div class="col-lg-7">
+								<div class="banner-img">
+									<img class="img-fluid" src="img/banner/banner-img.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 {{-- 
 	@include('home.feature')
 
@@ -47,9 +70,9 @@
 	
     @include('home.brand')
 
-    @include('home.related')--}} 
+    @include('home.related')
 
-    @include('home.footer') 
+    @include('home.footer') --}} 
 
 	<script src="home/js/vendor/jquery-2.2.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
@@ -61,7 +84,6 @@
 	<script src="home/js/nouislider.min.js"></script>
 	<script src="home/js/countdown.js"></script>
 	<script src="home/js/jquery.magnific-popup.min.js"></script>
-	<script src="home/js/owl.carousel.min.js"></script>
 	<!--gmaps Js-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="home/js/gmaps.min.js"></script>
