@@ -16,7 +16,9 @@ class HomeController extends Controller
     }
     public function katalogkamar()
     {
-        return view ('home.katalogkamar');
+        $kamar = Kamar::all();
+
+        return view ('home.katalogkamar', compact('kamar'));
     }
     public function blog()
     {

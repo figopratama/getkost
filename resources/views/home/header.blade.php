@@ -14,17 +14,17 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active">
+							<li class="nav-item">
 								<a class="nav-link" href="/">
 									Beranda
 								</a>
 							</li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item">
 								<a class="nav-link" href="/katalogkamar" >
 									Katalog Kamar
 								</a>
 							</li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item">
 								<a class="nav-link" href="/blog">
 									Blog
 								</a>

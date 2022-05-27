@@ -43,7 +43,64 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	</head>
 	<body>
-		Halaman Katalog Kamar
+		<!-- start product Area -->
+	<section class="owl-carousel active-product-area section_gap">
+		<!-- single product slide -->
+		<div class="single-product-slider">
+			<div class="container">
+				<div class="row justify-content-center" style="margin-top: 100px">
+					<div class="col-lg-6 text-center">
+						<div class="section-title">
+							<h1>Latest Products</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+								dolore
+								magna aliqua.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+
+				@foreach ($kamar as $kamar)
+
+				<div class="col-lg-3 col-md-6">
+						<div class="single-product">
+							<img class="img-fluid" src="kamar/{{ $kamar->image }}" alt="">
+							<div class="product-details">
+								<div class="header-1" style="margin-top: 3px; font-size: small">
+									<p>{{ $kamar->quantity }} kamar tersisa.</p>
+									<h6>Rp{{ $kamar->price }}</h6>
+								</div>
+								<br>
+								<div class="header-2" style="margin-top: 5px; font-size: medium">
+									<h4>{{ $kamar->address }}</h4>
+
+									<h5 style="color: darkorange">{{ $kamar->category }}</h5>
+									{{-- <p>{{ $kamar->facility }}</p> --}}
+								</div>
+								<div class="prd-bottom">
+
+									<a href="" class="social-info">
+										<span class="ti-bag"></span>
+										<p class="hover-text">add to bag</p>
+									</a>
+									<a href="" class="social-info">
+										<span class="lnr lnr-heart"></span>
+										<p class="hover-text">Wishlist</p>
+									</a>
+									<a href="" class="social-info">
+										<span class="lnr lnr-move"></span>
+										<p class="hover-text">view more</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				@endforeach
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end product Area -->
 	</body>
 	</html>
 
