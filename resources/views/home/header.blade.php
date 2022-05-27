@@ -58,7 +58,7 @@
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="nav-item">
-								<a href="cart.html" class="cart"><span class="ti-bag"></span>
+								<a href="/wishlist" class="social-info"><span class="lnr lnr-heart"></span>
 								</a>
 							</li>
 							<li class="nav-item">

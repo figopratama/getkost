@@ -43,7 +43,7 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	</head>
 	<body>
-		Halaman Blog
+		Halaman Blogssds
 	</body>
 	</html>
 

@@ -2,6 +2,42 @@
 <html lang="zxx" class="no-js">
 
 <head>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		/* CSS property for content section */
+		.columnA, .columnB, .columnC {
+			margin-top: 250px;
+			float: center;
+			width: 31%;
+			padding: 15px;
+			text-align:center;
+			
+		}
+
+		h2 {
+			text-align:center;
+		}
+
+		h3 {
+			text-align:center;
+		}
+		
+		/* Media query to set website layout
+		according to screen size */
+		@media screen and (max-width:600px) {
+			.columnA, .columnB, .columnC {
+				width: 50%;
+			}
+		}
+		@media screen and (max-width:400px) {
+			.columnA, .columnB, .columnC {
+				width: 100%;
+			}
+		}
+	</style>
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Favicon-->
@@ -36,16 +72,39 @@
     @include('home.header')
 
 	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	</head>
+<html>
+	
 	<body>
-		Halaman Tentang Kami
+		
+		<!-- Content section of website layout -->
+		<div class = "row">
+			
+			<div class = "columnA">
+				<img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200">
+				<h2 class="title-font font-medium text-lg text-gray-900">Figo Gymnastiar F. P.</h2>
+				<h3 class="text-gray-500 mb-3">UI Developer</h3>
+				<p class="mb-4">Dengan adanya website GetKosts, harapan saya yaitu agar dapat mempertemukan customer dengan pemilik kost menjadi lebih mudah.</p>
+			</div>
+
+			<div class = "columnB">
+				<img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200">
+				<h2 class="title-font font-medium text-lg text-gray-900">Nugroho Dwi Riyanto</h2>
+				<h3 class="text-gray-500 mb-3">System Analyst</h3>
+				<p class="mb-4">Dengan memanfaatkan perkembangan teknologi informasi dengan baik akan dapat membuka peluang bisnis baru menjadi lebih luass.</p>
+			</div>
+
+			<div class = "columnC">
+				<img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200">
+				<h2 class="title-font font-medium text-lg text-gray-900">Ari Kurniawan</h2>
+				<h3 class="text-gray-500 mb-3">UI Developer</h3>
+				<p class="mb-4">Visi kami sejalan dengan definisi Sistem Informasi itu sendiri yaitu dengan memangkas distribusi proses bisnis agar menjadi lebih singkat.</p>
+			</div>
+
+
+		</div>
 	</body>
-	</html>
+</html>				
+
 
 	<script src="home/js/vendor/jquery-2.2.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
