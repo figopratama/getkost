@@ -15,22 +15,22 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item active">
-								<a class="nav-link" href="index.html">
+								<a class="nav-link" href="/">
 									Beranda
 								</a>
 							</li>
 							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<a class="nav-link" href="/katalogkamar" >
 									Katalog Kamar
 								</a>
 							</li>
 							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<a class="nav-link" href="/blog">
 									Blog
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="contact.html">
+								<a class="nav-link" href="/tentangkami">
 									Tentang Kami
 								</a>
 							</li>
