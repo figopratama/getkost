@@ -2,6 +2,7 @@
 <html lang="zxx" class="no-js">
 
 <head>
+	<base href="/public">
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Favicon-->
@@ -34,75 +35,49 @@
 
 <body>
     @include('home.header')
-
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	</head>
-	<body>
-		<!-- start product Area -->
-	<section class="owl-carousel active-product-area section_gap">
-		<!-- single product slide -->
-		<div class="single-product-slider">
-			<div class="container">
-				<div class="row justify-content-center" style="margin-top: 100px">
-					<div class="col-lg-6 text-center">
-						<div class="section-title">
-							<h1>Latest Products</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore
-								magna aliqua.</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-
-				@foreach ($kamar as $kamar)
-
-				<div class="col-lg-3 col-md-6">
-						<div class="single-product">
-							<img class="img-fluid" src="kamar/{{ $kamar->image }}" alt="">
-							<div class="product-details">
-								<div class="header-1" style="margin-top: 3px; font-size: small">
-									<p>{{ $kamar->quantity }} kamar tersisa.</p>
-									<h6>Rp{{ $kamar->price }}</h6>
-								</div>
-								<br>
-								<div class="header-2" style="margin-top: 5px; font-size: medium">
-									<h4>{{ $kamar->address }}</h4>
-
-									<h5 style="color: darkorange">{{ $kamar->category }}</h5>
-									{{-- <p>{{ $kamar->facility }}</p> --}}
-								</div>
-								<div class="prd-bottom">
-
-									{{-- <a href="" class="social-info">
-										<span class="ti-bag"></span>
-										<p class="hover-text">add to bag</p>
-									</a> --}}
-									<a href="" class="social-info">
-										<span class="lnr lnr-heart"></span>
-										<p class="hover-text">Wishlist</p>
-									</a>
-									<a href="{{ url('detail_kamar', $kamar->id) }}" class="social-info">
-										<span class="lnr lnr-move"></span>
-										<p class="hover-text">view more</p>
-									</a>
+			<section class="banner-area">
+				<div class="container">
+					<div class="row fullscreen align-items-center justify-content-start">
+						<div class="col-lg-12" style="margin-left: 100px; margin-top: 100px; width: 50%; padding: 30px">
+							<div class="active-banner-slider owl-carousel">
+								<div class="row single-slide align-items-center d-flex">
+									<div class="col-lg-5 col-md-6">
+										<div class="single-product">
+											<div class="product-details">
+												<div class="header-1">
+													<p>{{ $kamar->quantity }} kamar tersisa.</p>
+												</div>
+												<div class="header-2" style="margin-top: 3px; font-size: medium">
+													<h4>{{ $kamar->address }}</h4>
+													<h6>Rp{{ $kamar->price }}</h6>
+						
+													<h5 style="color: darkorange">{{ $kamar->category }}</h5>
+													<p>{{ $kamar->facility }}</p>
+												</div>
+												<br>
+												<div class="header=3">
+													<h6>Kontak: {{ $kamar->contact }}(WhatsApp)</p>
+												</div>
+												<div class="prd-bottom">
+													<a href="" class="social-info">
+														<span class="lnr lnr-heart"></span>
+														<p class="hover-text">Wishlist</p>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-7">
+										<div class="banner-img">
+											<img class="img-fluid"  style="height: 400px" src="kamar/{{ $kamar->image }}" alt="">
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				@endforeach
 				</div>
-			</div>
-		</div>
-	</section>
-	<!-- end product Area -->
-	</body>
-	</html>
+			</section>
 
 	<script src="home/js/vendor/jquery-2.2.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"

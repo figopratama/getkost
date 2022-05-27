@@ -43,4 +43,11 @@ class HomeController extends Controller
             return view ('home.userpage');
         }
     }
+
+    public function detail_kamar($id)
+    {
+        $kamar = Kamar::find($id);
+
+        return view ('home.detail_kamar', compact('kamar'));
+    }
 }
