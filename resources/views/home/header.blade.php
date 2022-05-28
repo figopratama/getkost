@@ -25,8 +25,8 @@
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="/blog">
-									Blog
+								<a class="nav-link" href="/faq">
+									FAQ
 								</a>
 							</li>
 							<li class="nav-item">

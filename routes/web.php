@@ -31,7 +31,7 @@ Route::middleware([
 // USER
 route::get('/redirect',[HomeController::class,'redirect']);
 route::get('/katalogkamar',[HomeController::class,'katalogkamar']);
-route::get('/blog',[HomeController::class,'blog']);
+route::get('/faq',[HomeController::class,'faq']);
 route::get('/tentangkami',[HomeController::class,'tentangkami']);
 route::get('/detail_kamar/{id}',[HomeController::class,'detail_kamar']);
 

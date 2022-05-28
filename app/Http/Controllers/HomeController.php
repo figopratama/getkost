@@ -20,9 +20,9 @@ class HomeController extends Controller
 
         return view ('home.katalogkamar', compact('kamar'));
     }
-    public function blog()
+    public function faq()
     {
-        return view ('home.blog');
+        return view ('home.faq');
     }
     public function tentangkami()
     {

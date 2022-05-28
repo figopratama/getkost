@@ -5,11 +5,12 @@
 	<style>
 		* {
 			box-sizing: border-box;
+			margin: auto;
 		}
 
 		/* CSS property for content section */
 		.columnA, .columnB, .columnC {
-			margin-top: 250px;
+			margin-top: 50px;
 			float: center;
 			width: 31%;
 			padding: 15px;
@@ -71,14 +72,17 @@
 <body>
     @include('home.header')
 
+	<div class="flex flex-col text-center w-full mb-20" style="margin-top: 150px">
+		<h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Team</h1>
+		<p class="lg:w-2/3 mx-auto leading-relaxed text-base">Tim pengembang tergabung dari mahasiswa Manajemen Informatika Universitas Negeri Surabaya</p>
+	</div>
+	
 	<!DOCTYPE html>
 <html>
 	
 	<body>
 		
-		<!-- Content section of website layout -->
-		<div class = "row">
-			
+		<div class = "row">			
 			<div class = "columnA">
 				<img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200">
 				<h2 class="title-font font-medium text-lg text-gray-900">Figo Gymnastiar F. P.</h2>
@@ -99,9 +103,8 @@
 				<h3 class="text-gray-500 mb-3">UI Developer</h3>
 				<p class="mb-4">Visi kami sejalan dengan definisi Sistem Informasi itu sendiri yaitu dengan memangkas distribusi proses bisnis agar menjadi lebih singkat.</p>
 			</div>
-
-
 		</div>
+
 	</body>
 </html>				
 
