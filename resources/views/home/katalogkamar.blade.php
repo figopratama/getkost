@@ -61,23 +61,15 @@
 						<div class="single-product">
 							<img class="img-fluid" src="kamar/{{ $kamar->image }}" alt="">
 							<div class="product-details">
-								<div class="header-1" style="margin-top: 3px; font-size: small">
-									<p>{{ $kamar->quantity }} kamar tersisa.</p>
-									<h6>Rp{{ $kamar->price }}</h6>
-								</div>
-								<br>
 								<div class="header-2" style="margin-top: 5px; font-size: medium">
 									<h4>{{ $kamar->address }}</h4>
-
 									<h5 style="color: darkorange">{{ $kamar->category }}</h5>
-									{{-- <p>{{ $kamar->facility }}</p> --}}
+									<p>{{ $kamar->quantity }} kamar tersisa.</p>
 								</div>
-								<div class="prd-bottom">
-
-									{{-- <a href="" class="social-info">
-										<span class="ti-bag"></span>
-										<p class="hover-text">add to bag</p>
-									</a> --}}
+								<div class="header-1" style="margin-top: 10px; font-size: small">
+									<h6>Rp{{ $kamar->price }}</h6>
+								</div>
+								<div class="prd-bottom" style="margin-top: 5px">
 									<a href="" class="social-info">
 										<span class="lnr lnr-heart"></span>
 										<p class="hover-text">Wishlist</p>

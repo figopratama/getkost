@@ -50,7 +50,7 @@
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" src="img/banner/banner-img.png" alt="">
+									<img class="img-fluid" src="img/banner/kost.jpg" alt="">
 								</div>
 							</div>
 						</div>

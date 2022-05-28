@@ -93,7 +93,7 @@ class AdminController extends Controller
         $kamar->category = $request->category;
         $kamar->facility = $request->facility;
         $kamar->price = $request->price;
-        $kamar->address = $request->quantity;
+        $kamar->quantity = $request->quantity;
         
         $image = $request->image;
         if($image)
