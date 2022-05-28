@@ -82,7 +82,7 @@
 	
 	<body>
 		
-		<div class = "row">			
+		<div class = "row" style="width: 100%">			
 			<div class = "columnA">
 				<img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200">
 				<h2 class="title-font font-medium text-lg text-gray-900">Figo Gymnastiar F. P.</h2>

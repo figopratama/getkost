@@ -38,7 +38,7 @@
 			<section class="banner-area">
 				<div class="container">
 					<div class="row fullscreen align-items-center justify-content-start">
-						<div class="col-lg-12" style="margin-left: 100px; margin-top: 100px; width: 50%; padding: 30px">
+						<div class="col-lg-12" style="margin-left: 120px; margin-top: 80px; width: 70%; padding: 30px">
 							<div class="active-banner-slider owl-carousel">
 								<div class="row single-slide align-items-center d-flex">
 									<div class="col-lg-5 col-md-6">
@@ -47,9 +47,9 @@
 												<div class="header-1">
 													<p>{{ $kamar->quantity }} kamar tersisa.</p>
 												</div>
-												<div class="header-2" style="margin-top: 3px; font-size: medium">
-													<h4>{{ $kamar->address }}</h4>
-													<h6>Rp{{ $kamar->price }}</h6>
+												<div class="header-2" style="margin-top: 3px; font-size: large">
+													<h3>{{ $kamar->address }}</h3>
+													<h5>Rp{{ $kamar->price }}</h5>
 						
 													<h5 style="color: darkorange">{{ $kamar->category }}</h5>
 													<p>{{ $kamar->facility }}</p>
