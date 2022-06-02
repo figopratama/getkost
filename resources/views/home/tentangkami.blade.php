@@ -87,7 +87,7 @@
 				<img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200">
 				<h2 class="title-font font-medium text-lg text-gray-900">Figo Gymnastiar F. P.</h2>
 				<h3 class="text-gray-500 mb-3">UI Developer</h3>
-				<p class="mb-4">Dengan adanya website GetKosts, harapan saya yaitu agar dapat mempertemukan customer dengan pemilik kost menjadi lebih mudah.</p>
+				<p class="mb-4">Dengan adanya website GetKost, harapan saya yaitu agar dapat mempertemukan customer dengan pemilik kost menjadi lebih mudah.</p>
 			</div>
 
 			<div class = "columnB">

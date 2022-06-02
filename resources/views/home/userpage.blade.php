@@ -44,8 +44,7 @@
 							<div class="col-lg-5 col-md-6">
 								<div class="banner-content">
 									<h1>Getkost<br>Rumah kost Surabaya!</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-										dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+									<p>Memberikan pilihan rumah kost paling lengkap di Kota Surabaya!</p>
 								</div>
 							</div>
 							<div class="col-lg-7">
